@@ -19,14 +19,14 @@ public class TestFileUtils {
 	@Test
 	public void testGetSuffix() {
 		
-		String suffix = FileUtils.getSuffixName("D:\\program\\nodejs\\node_cache\\anonymous-cli-metrics.json");
+		String suffix = FileUtils.getSuffixName("");
 		System.out.println("suffix = " + suffix);
 		
 	}
 	
 	@Test
 	public void testDelFile() {
-		FileUtils.delFile("D:\\mvntest - 副本zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz	");
+		FileUtils.delFile("");
 	}
 	
 	@Test
@@ -45,7 +45,7 @@ public class TestFileUtils {
 	@Test
 	public void testCompare() throws FileNotFoundException, IOException{
 		System.out.println("比较开始");
-		FileUtils.comparePath("D:\\project\\07b", "D:\\project\\07b - 副本");
+		//FileUtils.comparePath("D:\\project\\07b", "D:\\project\\07b - 副本");
 		System.out.println("比较结束");
 	}
 	

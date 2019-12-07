@@ -43,6 +43,31 @@ public class StringUtils {
 	public static boolean haveValue(String str) {
 		return null!=str && !"".equals(str.trim());
 	}
+
+	/**
+	 * 验证是否为邮箱
+	 * @param str
+	 * @return
+	 */
+	public static boolean isEmail(String str) {
+		String pattern = "^\\w+@\\w+\\.[a-zA-Z]{2,3}$";
+		Pattern compile = Pattern.compile(pattern);
+		Matcher matcher = compile.matcher(str);
+		return matcher.matches();
+	}
+	
+	/**
+	 * 判断是否为数字
+	 * @param str
+	 * @return
+	 */
+	public static boolean idNumber(String str){
+		String regex = "^\\d[1,]$";
+		Pattern compile = Pattern.compile(regex);
+		Matcher matcher = compile.matcher(str);
+		boolean find = matcher.find();
+		return find;
+	}
 	
 	/**
 	 * 
