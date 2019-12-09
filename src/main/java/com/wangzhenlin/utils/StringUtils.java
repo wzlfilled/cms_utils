@@ -61,7 +61,7 @@ public class StringUtils {
 	 * @param str
 	 * @return
 	 */
-	public static boolean idNumber(String str){
+	public static boolean isNumber(String str){
 		String regex = "^\\d[1,]$";
 		Pattern compile = Pattern.compile(regex);
 		Matcher matcher = compile.matcher(str);

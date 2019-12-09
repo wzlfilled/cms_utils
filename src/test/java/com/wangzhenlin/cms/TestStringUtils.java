@@ -13,7 +13,7 @@ import com.wangzhenlin.utils.StringUtils;
 
 public class TestStringUtils {
 
-	static StringUtils stringUtils;
+static StringUtils stringUtils;
 	
 	@Before
 	public void init() {
@@ -88,20 +88,20 @@ public class TestStringUtils {
 	 * @throws UnsupportedEncodingException 
 	 */
 	@Test
-	public void testGetCn() throws UnsupportedEncodingException{
+	public void testGetCn() throws UnsupportedEncodingException {
 		String s = StringUtils.getGb2312(20);
 		System.out.println("中文是：s is " + s);
 		
 	}
 	
 	
-	@Test
+	/*@Test
 	public void testIsBlank2() {
 		
 		Boolean blank = stringUtils.isBlank("   ");
 		System.out.println(" blank is " + blank);
 		Assert.assertTrue(blank==true);
 		
-	}
+	}*/
 	
 }
